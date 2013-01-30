@@ -7,7 +7,7 @@ My quick and dirty attempt to make an Extjs bread crumb extension.
 Tested with Extjs 4.1.0
 
 Here it is running on jsfiddle.net
-   http://jsfiddle.net/scirelli/V9sMs/embedded/result/ 
+   http://jsfiddle.net/scirelli/V9sMs/7/embedded/result/
 
 Note: This is tailored to have functinoality that I wanted on a project I'm working on. So I don't think it functions like breadcrumbs on Amazon, for example. 
       Clicking on a crumb removes that crumb from the list. Clicking on a > removed everything above that > including the >.
