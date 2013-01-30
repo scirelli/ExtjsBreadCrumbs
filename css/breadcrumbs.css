@@ -1,0 +1,14 @@
+.breadCrumb{
+    text-decoration:underline;
+}
+
+.thread-greaterthan-icon{
+    background-image:url(../img/glyphicons_223_chevron-right.png) !important;
+    background-size:49%;
+}
+
+.thread-remove-icon{
+    background-image:url(../img/glyphicons_192_circle_remove.png) !important;
+    background-size:80%;
+}
+
