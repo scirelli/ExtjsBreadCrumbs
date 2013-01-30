@@ -152,7 +152,7 @@ Ext.define('Ext.toolbar.BreadCrumbs', {
             btn = this.remove(btn);
         else{
             aBtns.push(btn);
-            btn = this.remove(btn)
+            btn = this.remove(btn);
         }
         return btn;
     },
@@ -193,7 +193,7 @@ Ext.define('Ext.toolbar.BreadCrumbs', {
                     iconCls:this.gtIconCls, //'thread-greaterthan-icon',
                     _type:'gt',
                     width:16,
-                    height:16,
+                    height:16
                 },
                 {
                     iconCls:this.removeIconCls,//'thread-remove-icon',
@@ -269,7 +269,7 @@ Ext.define('Ext.toolbar.BreadCrumbs', {
             itm = itm.nextSibling();
         }
         if( itm && itm._type != 'bookend' ){
-            aEaten.push(itm)
+            aEaten.push(itm);
             itm.hide();
             itm = itm.nextSibling();
             if( itm && itm._type != 'bookend'){
@@ -488,7 +488,7 @@ if( conan === undefined ) var conan = new Object();
         this.onItemAdded   = function( sBtnText, oExtraData ){};
         this.onResize = function( ths, width, height, oldWidth, oldHeight, eOpts ){};
         this.setToolbar = function( oToolbar ){};
-    }
+    };
     conan.AMode = function( ){
         this.setToolbar = function( oToolbar ){
             if( oToolbar instanceof Ext.toolbar.Toolbar ){
@@ -496,23 +496,23 @@ if( conan === undefined ) var conan = new Object();
             }else{
                 throw 'conan.AMode.setToolbar() only accepts intances of Ext.toolbar.Toolbar.';
             }
-        },
+        };
         this.hideRightBookend = function(){
             this.oToolbar.rightBookend.hide();
             this.oToolbar.remove( this.oToolbar.rightBookend.previousSibling() );
             this.oToolbar.remove( this.oToolbar.rightBookend );
-        },
+        };
         this.showRightBookend = function(){
             this.oToolbar.add( this.oToolbar.rightFiller );
             this.oToolbar.rightBookend = this.oToolbar.add( this.oToolbar.oRightBookend );
             this.oToolbar.rightBookend.show();
-        },
+        };
         this.hideLeftBookend = function(){
             this.oToolbar.leftBookend.hide();
-        },
+        };
         this.showLeftBookend = function(){
             this.oToolbar.leftBookend.show();
-        }
+        };
     }
     conan.AMode.prototype = new conan.Mode();
 
